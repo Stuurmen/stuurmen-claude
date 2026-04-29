@@ -147,10 +147,8 @@ In client conversations and discovery calls, the default mode is listening witho
 **Call recording:** Use Granola or Mac Whisperer to record and transcribe digital calls. After a call, extract: key pain points, exact client language, open questions, agreed next steps.
 
 **Available skills:**
-- `/stuurmen-linkedin` — LinkedIn post in Stuurmen's voice
-- `/boomerang-pitch` — 1-minute referral network pitch
-- `/aanbesteding-check` — evaluate a tender for Stuurmen fit
-- `/hundred-million-offers` — structure an irresistible offer
+- `/stuurmen-linkedin` — write a LinkedIn post in Stuurmen's voice
+- `/hundred-million-offers` — structure an irresistible offer using the Value Equation, price anchoring, bonus stacking, and risk reversal. Use when building proposals or pricing strategy.
 
 ---
 
