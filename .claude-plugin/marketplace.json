@@ -1,6 +1,8 @@
 {
   "name": "stuurmen-claude",
-  "owner": "Stuurmen",
+  "owner": {
+    "name": "Stuurmen Branding Agency"
+  },
   "plugins": [
     {
       "name": "stuurmen",
