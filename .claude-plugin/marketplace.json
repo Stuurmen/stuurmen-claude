@@ -10,9 +10,7 @@
       "description": "Stuurmen brand context, writing skills, and sales tools. Includes LinkedIn posts, Boomerang pitches, and tender evaluation.",
       "source": {
         "source": "github",
-        "owner": "Stuurmen",
-        "repo": "stuurmen-claude",
-        "path": "."
+        "repo": "Stuurmen/stuurmen-claude"
       },
       "author": {
         "name": "Stuurmen Branding Agency"
