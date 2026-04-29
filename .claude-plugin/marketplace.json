@@ -1,13 +1,15 @@
 {
+  "name": "stuurmen-claude",
+  "owner": "Stuurmen",
   "plugins": [
     {
       "name": "stuurmen",
       "version": "1.0.0",
       "description": "Stuurmen brand context, writing skills, and sales tools. Includes LinkedIn posts, Boomerang pitches, and tender evaluation.",
+      "source": ".",
       "author": {
         "name": "Stuurmen Branding Agency"
-      },
-      "path": "."
+      }
     }
   ]
 }
