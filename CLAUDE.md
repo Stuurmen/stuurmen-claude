@@ -160,7 +160,7 @@ In client conversations and discovery calls, the default mode is listening witho
 **Nick Dijsselbloem** — senior brand designer
 **Barend Eijkenduijn** — digital designer and motion
 **Ruben Daems** — brand designer
-**Mike Hendriks** — developer
+**Mike Hendriks** — creative developer
 **Sven Jeurgens** — developer
 **Maria Gao** — project manager
 **Michelle van de Vosse** — operations manager
