@@ -6,30 +6,25 @@ De plugin laadt automatisch de Stuurmen-identiteit in elke sessie — doelgroep,
 
 ## Wat er in zit
 
-**CLAUDE.md — altijd-actieve context**
-Wie Stuurmen is, voor wie we werken, hoe we werken, hoe we schrijven, hoe we voorstellen structureren, wat we kosten en met wie. Dit wordt automatisch geladen in elke Claude-sessie.
+**Altijd-actieve context**
+Wie Stuurmen is, voor wie we werken, hoe we werken, hoe we schrijven, hoe we voorstellen structureren, wat we kosten en met wie.
 
 **Skills — op aanvraag**
 - `/stuurmen-linkedin` — schrijft een LinkedIn post in de stem van Stijn/Stuurmen, inclusief scorekaart op thought leadership, pijn en doelgroep fit
 - `/hundred-million-offers` — structureert een onweerstaanbaar aanbod via de Value Equation, price anchoring, bonus stacking en risk reversal. Gebruik bij het bouwen van voorstellen of het bepalen van pricing.
 
-**Commands**
-- `/stuurmen-setup` — eenmalig uitvoeren in Claude Code om de Stuurmen-context te activeren als globale CLAUDE.md
+## Gebruik
 
-## Installatie
+### Claude web (claude.ai)
+Niets te doen. De context is actief in elk gesprek.
 
-### Voor Claude web (claude.ai)
-Niets te doen. De plugin is org-wide geïnstalleerd en actief in elk gesprek.
+### Claude Code
+Voer dit eenmalig uit in je terminal (niet in Claude zelf):
 
-### Voor Claude Code
-Voer eenmalig uit na installatie van de plugin:
+```bash
+mkdir -p ~/.claude && gh api repos/Stuurmen/stuurmen-claude/contents/CLAUDE.md --jq '.content' | base64 -d > ~/.claude/CLAUDE.stuurmen.md && ([ -f ~/.claude/CLAUDE.md ] && ! grep -q "Kill off the average" ~/.claude/CLAUDE.md && mv ~/.claude/CLAUDE.md ~/.claude/CLAUDE.personal.md || true) && ln -sf ~/.claude/CLAUDE.stuurmen.md ~/.claude/CLAUDE.md && echo "Stuurmen context actief."
 ```
-/stuurmen-setup
-```
-Dit koppelt de Stuurmen CLAUDE.md als je globale context. Updates komen daarna automatisch door — je hoeft dit maar één keer te doen.
 
-Heb je al een eigen CLAUDE.md? Die wordt bewaard als `~/.claude/CLAUDE.personal.md`.
+Dit vereist de [GitHub CLI](https://cli.github.com) (`gh`) en toegang tot de Stuurmen GitHub-organisatie. Heb je dat nog niet? Vraag Stijn.
 
-## Updates
-
-Als de plugin wordt bijgewerkt, is de nieuwe versie direct actief. Geen actie nodig.
+Na deze stap is de context actief in elke Claude Code-sessie op jouw machine. Als de plugin wordt bijgewerkt, run je dit commando opnieuw om de nieuwste versie op te halen.
