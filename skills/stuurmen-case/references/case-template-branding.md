@@ -33,26 +33,30 @@ Elke module is gemapt op een Figma-component uit het Stuurmen design system (fil
 
 **Doel:** ICP-bezoeker herkent zichzelf. SEO en GEO krijgen citeerbare feiten.
 
-**Velden (allemaal verplicht, "n.b." mag):**
+**Verplichte velden:**
 - `klant` — bedrijfsnaam
 - `branche` — concreet, bijvoorbeeld "Buitenleven en maatwerk overkappingen", niet "B2B"
-- `omvang` — FTE range of omzet-indicatie ("20-50 FTE" of "5-15M omzet")
 - `regio` — waar zit de klant
 - `scope` — letterlijk wat Stuurmen heeft geleverd. Lijst, geen zinnen
-- `jaar` — wanneer (van-tot, of jaar van afronding)
-- `looptijd` — hoeveel weken/maanden was het project
-- `tags` (optioneel, voor `Tag container`) — 3-6 tags voor categorisering en filtering: branche, type werk, scope-onderdelen
+- `looptijd` — periode van het traject (jaartallen of "2025-2026")
+
+**Optionele velden (alleen opnemen als ze iets toevoegen):**
+- `omvang` (FTE of omzet) — laat weg bij kleine teams (<5) of als het de klant kleiner doet voelen dan zijn werk
+- `tags` (voor `Tag container`) — 3-6 tags voor categorisering en filtering
+
+**Wat NIET in snelfeiten:**
+- Geen FTE als het bedrag de claim van de case ondergraaft (3 mensen die werken op niveau van 30 mensen, dan vermeld je geen FTE)
+- Geen jaar-getallen die suggereren dat het traject korter was dan het was
+- Geen scope-onderdelen die niet daadwerkelijk geleverd zijn
 
 **Voorbeeld (Mobuline):**
 ```
 Klant: Mobuline (voorheen Manta Roofs)
-Branche: Maatwerk textiel-overkappingen
-Omvang: ~10 FTE
+Branche: Maatwerk textielarchitectuur
 Regio: Nederland
-Scope: Merkstrategie, merknaam, visuele identiteit, website, communicatie-kit
-Jaar: 2025
-Looptijd: 14 weken
-Tags: Branding, Merknaam, Visuele identiteit, Website, Maatwerk, B2C
+Scope: Merkstrategie, visuele identiteit, website, configurator-strategie
+Looptijd: 2025-2026
+Tags: Branding, Visuele identiteit, Website, Buitenleven
 ```
 
 ---
@@ -84,16 +88,29 @@ Tags: Branding, Merknaam, Visuele identiteit, Website, Maatwerk, B2C
 **Doel:** lezer voelt de spanning tussen wat het bedrijf is en hoe de markt het ziet. Dit is het "shift the perspective"-moment.
 
 **Velden:**
-- `inleidende_zin` — één zin context boven de slider ("Het probleem zat niet in zichtbaarheid of bekendheid, maar in consistentie en keuzes.")
+- `inleidende_zin` — één zin context boven de slider
 - `slides[]` — 3-5 cards. Elke card heeft:
-  - `kop` — de pijn in eigen woorden van klant of markt ("Het verhaal voelde niet één geheel")
+  - `kop` — het pijnpunt in publicatie-toon (geen letterlijke pijn-quote van de klant zelf)
   - `cta_label` — meestal "Lees het pijnpunt"
-  - `body` — 60-100 woorden uitleg met klant-eigen taal en de werkelijkheid eronder
+  - `body` — 60-100 woorden uitleg met de werkelijkheid eronder
 
-**Format per card (voorbeeld Mobuline):**
-> **Kop:** "Schaduwdoek-leverancier, met een mooie website"
+### Belangrijk: parafraseren, niet citeren
+
+In de Documentatie staan vaak letterlijke uitspraken uit workshops, externe interviews of klantfeedback. Bijvoorbeeld: "is toch wel veel geld voor een doek met palen", of "ohja, ook veel op festivals toch?". Deze zinnen zijn waardevol als bron voor patronen, maar **horen niet letterlijk op een publieke case**.
+
+**Reden:** een klant herkent zichzelf op een publieke pagina anders dan in een interne workshop. Letterlijke uitspraken die in een veilige werksetting terecht waren, kunnen op een case-pagina afbreuk doen aan de relatie en aan het merk van de klant zelf. Stuurmen toont het inzicht, niet de schaamte.
+
+**Hoe wel:**
+- Beschrijf het patroon zonder de klant te citeren ("De markt zag het bedrijf als leverancier van losse onderdelen, niet als de specialist die het was")
+- Generaliseer waar mogelijk ("Sales-gesprekken begonnen vaak bij prijs in plaats van bij waarde")
+- Gebruik categorieën in plaats van scenes ("Verwarring met aangrenzende productgroepen", in plaats van een specifieke quote)
+
+**Wel direct quoten:** alleen als de quote afkomstig is van een algemeen marktpatroon, niet van een specifieke klant of partner van deze klant. En liever helemaal niet: parafrasering is bijna altijd sterker.
+
+**Format per card (voorbeeld zonder letterlijke quotes):**
+> **Kop:** Verward met aangrenzende productgroepen
 >
-> **Body:** Klanten en partners zagen Mobuline als leverancier van losse doeken. "Ohja, ook veel op festivals toch?" "Die kun je ook verhuren zeker?" In werkelijkheid waren ze textiel-specialisten die met software uit de zeilbouw maatwerkoplossingen ontwerpen, in samenwerking met Tentech. Tot 120 m² aan één stuk. Niet vergelijkbaar met de buurman in zonweringen.
+> **Body:** De markt schaalde het bedrijf onbedoeld in bij categorieën waar het niet thuishoorde — schaduwdoekleveranciers, festivaltent-verhuur, generieke buitenproducten. Daardoor begon elk gesprek bij prijs in plaats van bij positie. Het werkelijke product, ontworpen met software uit de zeilbouw, in-house geproduceerd en getest op weerstanden, droeg een ander prijspunt dat zonder context niet uit te leggen viel.
 
 **Bron in materiaal:** "Klanten en partners zien ons als..." en "Maar in werkelijkheid zijn we..." in de Documentatie. Externe interviews, klantfeedback.
 
@@ -164,6 +181,36 @@ Daaronder 2-3 zinnen die de verschuiving onderbouwen. Wat verandert er door deze
 
 ---
 
+## Module 7.5 — Het werk
+
+**Figma-componenten:** `Normal image`, `Double image`, optioneel `Caption`. Bij grote schaal-projecten: meerdere `Double image`-blokken na elkaar.
+
+**Doel:** Stuurmen maakt uiteindelijk gewoon vette shit. Deze module geeft het visuele resultaat eigen ademruimte. Niet als bewijs onder de strategie, maar als eigen waardepunt. De bezoeker ziet wat er ís gemaakt en herkent het vakmanschap. Voor designers en developers in het ICP is dit vaak de bevestiging dat de strategische ambitie niet eindigt in een PowerPoint.
+
+**Vorm:** minimaal **8 beelden**, vaker meer. Mix van:
+- Productfotografie of lifestyle-fotografie van het uiteindelijke werk in context
+- Drukwerk-mockups of foto's van tastbaar materiaal
+- Website-screenshots (desktop en mobile, naast elkaar of als doorscroll)
+- Configurator/tool screenshots
+- Motion stills, social-uitingen of campagne-beelden
+- Brand book pagina's, kleurpalet in toepassing, typografie in praktijk
+
+**Layout-suggestie:**
+- Open met één groot beeld dat het project als geheel laat zien (`Normal image` full-width)
+- Daarna afwisseling tussen `Double image` (twee gelijkwaardige beelden naast elkaar) en `Normal image`
+- Een korte `Caption` (1 regel) onder een beeld of cluster waar context nodig is
+- Geen verplichte uitleg per beeld. Het werk spreekt grotendeels voor zichzelf.
+
+**Wat NIET:**
+- Geen renders of mock-ups die niet representatief zijn voor het echte werk
+- Geen herhaling van beelden uit Module 7 (visuele identiteit) — die zijn klein, deze zijn groot en in toepassing
+- Geen design-system pagina's uit Figma in plaats van de uiteindelijke uitvoering
+- Geen logos op grijze achtergronden (saai en niet-representatief)
+
+**Bron voor beelden:** vraag in pre-flight uit. Als beelden ontbreken op het moment van schrijven, markeer in gap-list met expliciete vraag naar designteam (Barend voor digital, Ruben/Nick voor brand identity en drukwerk).
+
+---
+
 ## Module 8 — Wat het opleverde
 
 **Figma-component:** `Benefits card` in grid (2-4 naast elkaar). Bij zachtere observaties zonder cijfers: `Rows`.
@@ -228,7 +275,9 @@ Body: Sales en operations vertellen voor het eerst dezelfde positionering, in pl
 
 **Bron:** los kort interview na oplevering. Vraag in playbook.
 
-**Wanneer Testimonial card in plaats van Quote?** Vrijwel nooit. Alleen als de case-pagina visueel licht is en de quote letterlijk de zwaarte moet dragen, of als er een sterk visueel element bij de quote hoort. Default: `Quote`.
+**Wanneer Testimonial card in plaats van Quote?** Vrijwel nooit. Default is altijd `Quote`.
+
+**Figma-implementatie:** gebruik een `Text component` met `Has quote = true` en alle andere toggles uit. Niet de `Testimonials slider` — die toont meerdere slides en is bedoeld voor pagina's met meerdere getuigenissen. Een testimonials slider voor één quote is technisch en visueel overkill.
 
 ---
 
@@ -246,6 +295,24 @@ Body: Sales en operations vertellen voor het eerst dezelfde positionering, in pl
 > Wat hier zichtbaar wordt: een product dat technisch superieur is, hoeft niet automatisch ook merkmatig superieur te zijn. Mobuline had het product. Wat ontbrak was de positie waarin dat product onmiskenbaar werd. Voor B2B-bedrijven met bewezen kwaliteit maar onzichtbaarheid op de markt is dit een herkenbaar patroon.
 
 **Niet doen:** niet preken, niet generiek branding-advies, geen "de les is dat...".
+
+---
+
+## Module 10.5 — Brand statement
+
+**Figma-component:** `Text component` (Size=Large, Layout=Middle, alleen `Has heading` aan, rest uit)
+
+**Doel:** Stuurmen zet haar handtekening onder de case. Vaste slotzin na het markt-inzicht van Module 10, voor de FAQ. Identiek in elke branding-case. Niet case-specifiek, niet aanpasbaar.
+
+**Inhoud is altijd:**
+
+> Kill off the average™
+> Shift the perspective.
+
+**Regels:**
+- Nooit vertalen. In de NL én de EN versie staan altijd de Engelse originelen.
+- Geen aanvullende uitleg, geen context-zin erbij, geen vertaling eronder.
+- Staat als eigen blok. Niet ingebakken in de tekst van Module 10 of 11.
 
 ---
 
@@ -285,7 +352,7 @@ Body: Sales en operations vertellen voor het eerst dezelfde positionering, in pl
 **Onderdelen:**
 - `services_geleverd` — heldere bullet-lijst van Stuurmen-onderdelen die in deze case zaten. Mapt naar Stuurmen's hoofdfasen (Brand Strategy / Brand Design / Brand in practice). Linkbaar.
 - `verwante_cases` — 2 case-cards. Liefst zelfde branche of zelfde type verschuiving.
-- `cta` — `CTA card` met "Plan een call". Standaard met Stijn voor strategische cases. Voor web-only cases: Barend.
+- `cta` — `CTA card` met "Plan een call". Alleen Stijn of Anne (cal.com-integratie). Default voor branding: Stijn. Round-robin (Stijn + Anne) als beide kunnen.
 
 ---
 
@@ -311,7 +378,7 @@ Zo wordt de case ook zichtbaar in `Cases Row` en op de overzichtspagina, met dez
 Niet zichtbaar op de pagina, wel cruciaal voor SEO en GEO.
 
 **Velden:**
-- `meta_title` — max 60 karakters. Format: "[Strategische verschuiving] | Case [klant] | Stuurmen". Bijvoorbeeld: "Van schaduwdoek tot textiel-architect | Mobuline | Stuurmen"
+- `meta_title` — max 60 karakters. Format: `[klantnaam] · [strategische verschuiving] · Stuurmen`. Scheidingsteken is de middle dot `·` (U+00B7), nooit een pipe.
 - `meta_description` — 140-160 karakters. Eén zin die de verschuiving samenvat plus het type bedrijf. Moet een mens triggeren te klikken én een LLM een goede samenvatting geven.
 - `og_title` / `og_description` — meestal gelijk aan meta, soms scherper voor social
 - `og_image` — hero-beeld
@@ -319,8 +386,8 @@ Niet zichtbaar op de pagina, wel cruciaal voor SEO en GEO.
 - `hreflang` — koppeling tussen NL en EN versie
 
 **Voorbeeld (Mobuline NL):**
-- meta_title: "Van schaduwdoek tot textiel-architect | Mobuline | Stuurmen"
-- meta_description: "Hoe Mobuline (voorheen Manta Roofs) zich herpositioneerde van anonieme leverancier naar textiel-architect. Branding, naam, website door Stuurmen."
+- meta_title: `Mobuline · Van schaduwdoek tot textielarchitect · Stuurmen`
+- meta_description: "Hoe Mobuline (voorheen Manta Roofs) zich herpositioneerde van anonieme leverancier naar textielarchitect. Branding, naam, website door Stuurmen."
 
 ---
 
