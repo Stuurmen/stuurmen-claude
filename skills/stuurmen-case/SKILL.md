@@ -103,11 +103,13 @@ Toon het teamlid:
 ### Fase 4 — EN vertaling (alleen op verzoek na NL-akkoord)
 
 Als het teamlid akkoord geeft op NL:
-1. Vertaal de hele case naar Engels
-2. Behoud de strategische verschuiving (Module 5) — vaak vraagt dit een herformulering, geen letterlijke vertaling
-3. Genereer EN meta title + description (geen letterlijke vertaling van NL — denk vanuit Engelse zoekwoorden)
-4. Pas pad aan: `/en/project/<slug>` (slug mag identiek blijven aan NL voor consistentie, of vertaald, kies consistent voor de hele site)
-5. Voeg hreflang-instructie toe in frontmatter
+1. **Vertaal de NL versie.** De EN is een trouwe vertaling, geen zelfstandige herschrijving. Volg de NL zinstructuur, de NL argumentvolgorde, de NL moduleopbouw. Voeg geen nieuwe frames of Engelse invullingen toe die niet in de NL staan.
+2. **Native Brits Engels.** Niet Amerikaans. "Colour" niet "color", "organisation" niet "organization", "recognisable", "centre", "enquiries". Schrijf alsof een Britse native speaker het heeft geschreven.
+3. **Pay-offs vertaal je van NL naar EN.** "Meer buiten" wordt "More outside". Andersom mag niet: introduceer geen Engelse termen die dan terugvertaald worden naar het NL.
+4. **Strategische verschuiving (Module 5)** mag licht worden aangepast voor Engelse leesbaarheid, maar de betekenis blijft identiek aan de NL.
+5. Genereer EN meta title + description (denk vanuit Engelse zoekwoorden, geen letterlijke vertaling).
+6. Pas pad aan: `/en/project/<slug>` (slug identiek aan NL).
+7. Voeg hreflang-instructie toe in frontmatter.
 
 ### Fase 5 — Indexing (alleen na live)
 
