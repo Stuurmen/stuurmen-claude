@@ -157,8 +157,8 @@ In client conversations and discovery calls, the default mode is listening witho
 **Stijn de Jong** — founder and director
 **Marysa Vos** — brand strategist
 **Anne Thomassen** — commercial lead (from June 1, 2026)
-**Nick Dijsselbloem** — senior brand designer
-**Barend Eijkenduijn** — digital designer and motion
+**Nick Dijsselbloem** — senior brand designer (brand identity, print, photography). Not responsible for digital or web design.
+**Barend Eijkenduijn** — digital designer and motion. Sole owner of digital and web design.
 **Ruben Daems** — brand designer
 **Mike Hendriks** — creative developer
 **Sven Jeurgens** — developer
