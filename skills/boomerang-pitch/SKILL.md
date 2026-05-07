@@ -38,13 +38,39 @@ Schrijf zodat iemand in de zaal denkt: "Dat gaat over mij."
 
 Tel altijd na. Als de pitch te lang is, snij er iets uit. Nooit meer woorden, nooit een uitzonderingsgeval maken.
 
-## Toon
+## Schrijfstijl
 
-- Direct en zelfverzekerd. Geen "eigenlijk" of "misschien"
-- Geen jargon. Geen "merkbeleving", "strategisch partnership" of "ontzorgen"
-- Menselijk, niet corporate
-- Geen em dash (—), geen bullet points in de gesproken tekst
-- Geen AI-klingende zinsconstructies
+### Ritme en zinsbouw
+
+Een pitch die klinkt als een pitch werkt niet. Hij moet klinken als iemand die iets zegt omdat het de moeite waard is om te zeggen.
+
+Zinnen mogen lopen. Ze mogen ademen. Niet elke zin hoeft kort te zijn — variatie is wat het menselijk maakt. Korte zinnen op een rij kunnen krachtig zijn, maar alleen als ze iets opbouwen, niet als stijltruc.
+
+Schrijf zodat iemand het hardop kan zeggen zonder het gevoel te hebben dat hij een tekst voorleest.
+
+### Toon
+
+Opinionated: een standpunt innemen zonder excuses. Direct: geen "het zou kunnen zijn dat..." of "misschien is het interessant om...". Rustig zelfverzekerd: niet schreeuwerig, wel stellig. De pitch heeft een punt en verdedigt dat punt.
+
+Joy + edge: het mag energie hebben, maar heeft altijd iets te zeggen. Reality-led: gebaseerd op wat echt gebeurt in de praktijk, niet op theorie.
+
+### Woordkeuze
+
+Spreektaal, geen vaktaal. Woorden die Stijn ook in een gesprek zou gebruiken. Klinische of harde termen die indruk willen maken werken averechts.
+
+Vermijd: "merkbeleving", "strategisch partnership", "ontzorgen", "klantgericht", "full-service", "impactvol".
+
+Vermijd vage kwantificeerders: "veel bedrijven", "de meeste organisaties", "vaak zie ik". Als iets waar is, zeg je het gewoon.
+
+### Interpunctie
+
+Geen em dash (—). Gewoon punt en komma. Zinnen mogen een beetje lopen als dat natuurlijker is dan ze te kappen.
+
+### Wat niet werkt
+
+Vermijd openingszinnen na de opener die ruiken naar een template: "Wij helpen bedrijven om...", "Ons doel is om...", "Bij Stuurmen geloven wij...". Dat is bureau-taal.
+
+Vermijd ook reeksen van ontkenningen als stijlfiguur. "Niet dit. Niet dat. Niet het ander." is een patroon geworden dat iedereen herkent. Als je iets wil afbakenen, doe het dan in één zin met echte inhoud.
 
 ## Wat de pitch nooit doet
 
@@ -52,6 +78,7 @@ Tel altijd na. Als de pitch te lang is, snij er iets uit. Nooit meer woorden, no
 - Meerdere doelgroepen aanspreken tegelijk
 - Eindigen met een harde close ("bel me" / "kijk op onze website")
 - Rijmen of sloganesk worden buiten de opener om
+- Klinken als een AI die een pitch heeft samengesteld
 
 ## Context
 
