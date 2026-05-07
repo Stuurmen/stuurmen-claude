@@ -40,6 +40,23 @@ fi
 # Stap 3: symlink zetten
 ln -sf "$LINK_TARGET" ~/.claude/CLAUDE.md
 echo "Stuurmen context actief."
+
+# Stap 4: verplichte skills installeren
+echo ""
+echo "Skills installeren..."
+
+if ! command -v npx &>/dev/null; then
+  echo "! npx niet gevonden. Installeer Node.js via https://nodejs.org en draai dit script opnieuw."
+else
+  # google-search-console: vereist voor de stuurmen-case indexing-workflow
+  if [ -f ~/.agents/skills/google-search-console/SKILL.md ] || [ -f ~/.claude/skills/google-search-console/SKILL.md ]; then
+    echo "✓ google-search-console al geïnstalleerd"
+  else
+    echo "→ google-search-console installeren..."
+    npx skills add kostja94/marketing-skills@google-search-console -g -y
+    echo "✓ google-search-console geïnstalleerd"
+  fi
+fi
 ```
 
 Klaar. De context is nu actief in elke Claude Code-sessie op deze machine.
