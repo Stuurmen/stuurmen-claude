@@ -12,6 +12,7 @@ Wie Stuurmen is, voor wie we werken, hoe we werken, hoe we schrijven, hoe we voo
 **Skills — op aanvraag**
 - `/stuurmen-linkedin` — schrijft een LinkedIn post in de stem van Stijn/Stuurmen, inclusief scorekaart op thought leadership, pijn en doelgroep fit
 - `/hundred-million-offers` — structureert een onweerstaanbaar aanbod via de Value Equation, price anchoring, bonus stacking en risk reversal. Gebruik bij het bouwen van voorstellen of het bepalen van pricing.
+- `/stuurmen-case` — schrijft een strategie-gestuurde case voor stuur.men op basis van bronmateriaal (Brand Concept, Documentatie, transcripts). NL eerst, EN op verzoek. Inclusief meta title/description, FAQ, case-card content, en hulp bij Google Search Console URL-indexing.
 
 ## Gebruik
 
